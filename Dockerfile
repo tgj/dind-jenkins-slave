@@ -38,5 +38,5 @@ RUN usermod -a -G docker jenkins
 
 
 # place the jenkins slave startup script into the container
-ADD jenkins-slave-startup.sh /tmp
+ADD jenkins-slave-startup.sh /usr/local/bin
 CMD ["/jenkins-slave-startup.sh"]
